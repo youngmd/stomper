@@ -44,3 +44,6 @@ The above example will:
  *  Make output image size configurable
  
  
+ ### Acknowledgments
+ 
+ This repository includes and makes use of ESO's `footprintfinder.py`, available from here:  http://www.eso.org/~fstoehr/footprintfinder.py
