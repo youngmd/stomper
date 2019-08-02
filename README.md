@@ -25,7 +25,7 @@ The above example will:
  
  ### Sample Output
  
- ![My image](youngmd.github.com/stomper/test.png)
+ ![My image](test.png)
  
  ## TODO
  
