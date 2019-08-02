@@ -22,6 +22,11 @@ The above example will:
  *  place a scale ruler 
  *  output the image to the specified file.   
  
+ 
+ ### Sample Output
+ 
+ ![My image](youngmd.github.com/stomper/test.png)
+ 
  ## TODO
  
  *  Deliver as python package and make available via pip
