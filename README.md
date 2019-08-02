@@ -10,8 +10,17 @@ stomper will automatically download and annotate DSS Survey images for use in pr
 
 ## Usage
 
-`python stomper.py -c 'NGC7332',3.1:'NGC7339,2.7 --out=NGC7332_figure.png NGC7332.R.fits NGC7339_pos2.G.fits`
+`python stomper.py -c 'NGC7332',3.1:'NGC7339',2.7 --out=NGC7332_figure.png NGC7332.R.fits ${input_2} ${input_3} ... `
 
+#### Options
+
+*  `-c ${label},${size}:${label2},${size2}...`
+    *  `:` separated list of comma-separated pairs consisting of the target names and the size (in arcminutes) of the circles to draw
+*  `--out=outfile.png`
+    *  output file name
+*  `NGC7332.R.fits ${input_2} ${input_3} ...` 
+    *  List of input files.  Currently does not check that input images are close on the sky
+    
 The above example will:
  
  *  read in the input fits file(s)
@@ -25,7 +34,7 @@ The above example will:
  
  ### Sample Output
  
- ![My image](test.png)
+ ![NGC7332 test image](test.png)
  
  ## TODO
  
