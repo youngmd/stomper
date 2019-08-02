@@ -853,7 +853,7 @@ def getpixelorder(chip, borderpixels, borderdictionary, groupid, grouplen, first
        This function finds the order of the pixels going round the chip. The array of borderpixelids is returned.
        The orientation is clockwise.
     '''
-    import pylab, sys
+    import sys
     print(whocalls(verbose=verbose) + "Ordering borderpixels ...")
 
     # pixelorder to check

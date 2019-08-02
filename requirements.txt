@@ -1,0 +1,7 @@
+matplotlib==2.2.2
+pywcs==1.12
+astropy==2.0.5
+numpy==1.14.2
+astroquery==0.3.8
+kapteyn==Apple
+pyfits==3.5

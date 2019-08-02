@@ -1,13 +1,14 @@
 #!/usr/bin/env python
-import sys
 import os
+import sys
+
+import matplotlib
+import numpy as np
+from astropy import coordinates
+from astropy import units as u
 from astropy.io.fits import getheader
 from astropy.table import Table
 from astroquery.skyview import SkyView
-from astropy import units as u
-from astropy import coordinates
-import numpy as np
-import matplotlib
 
 matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
@@ -218,9 +219,9 @@ def plot_images(c, max_sep, max_ra, min_ra, footprints, matches, circles, outfil
         as_ruler.tickdy = -10
         annim.Ruler(x1=100, y1=1900, rulersize=3.1, lambda0=0.0,
                     step=1, units='arcmin', addangle=90, size=5)
-        annim.Ruler(x1=100, y1=1900, rulersize=0.05, lambda0=0.0,
-                                step=0.025239, units='deg', fliplabelside=True, fun=lambda x: x / 0.025239 * 10,
-                                fmt="%d kpc", addangle=90, size=4)
+        # annim.Ruler(x1=100, y1=1900, rulersize=0.05, lambda0=0.0,
+        #                         step=0.025239, units='deg', fliplabelside=True, fun=lambda x: x / 0.025239 * 10,
+        #                         fmt="%d kpc", addangle=90, size=4)
         annim.plot()
         annim.interact_toolbarinfo()
         annim.interact_imagecolors()
