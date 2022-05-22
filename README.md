@@ -36,13 +36,6 @@ The above example will:
  
  ![NGC7332 test image](test.png)
  
- ## TODO
- 
- *  Deliver as python package and make available via pip
- *  Automatically determine object distance and provide scaler ruler in (kpc) at object
- *  Better document input options
- *  Make output image size configurable
- 
  
  ### Acknowledgments
  
